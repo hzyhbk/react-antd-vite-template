@@ -1,0 +1,9 @@
+// .prettierignore
+node_modules
+.*ignore
+dist
+build
+.vscode
+yarn.lock
+config
+public

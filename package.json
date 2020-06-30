@@ -1,0 +1,34 @@
+{
+  "name": "react-antd-vite-template",
+  "version": "0.0.1",
+  "author": "hzyhbk",
+  "description": "react antd vite template",
+  "scripts": {
+    "start": "vite --open --config ./config/vite.config.js",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@pika/react": "^16.13.1",
+    "@pika/react-dom": "^16.13.1",
+    "antd": "^4.3.5"
+  },
+  "devDependencies": {
+    "less": "^3.11.3",
+    "hasky": "^3.0.2",
+    "lint-staged": "^10.2.9",
+    "prettier": "^2.0.5",
+    "vite": "^1.0.0-beta.8",
+    "vite-plugin-react": "^3.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.ts,.js}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
