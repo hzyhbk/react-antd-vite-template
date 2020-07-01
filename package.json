@@ -5,7 +5,7 @@
   "description": "react antd vite template",
   "scripts": {
     "start": "vite --open --config ./config/vite.config.js",
-    "build": "vite build"
+    "build": "vite build --jsx react --config ./config/vite.config.js"
   },
   "dependencies": {
     "@ant-design/icons": "^4.2.1",
