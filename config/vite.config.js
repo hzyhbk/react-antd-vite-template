@@ -11,7 +11,7 @@ const config = {
     '/@/': path.resolve(__dirname, '../src')
   },
   optimizeDeps: {
-    include: ['antd']
+    include: ['antd', 'tui-calendar', 'moment',],
   },
   cssPreprocessOptions:{
     // antd需要开启这个才能引用 antd.less

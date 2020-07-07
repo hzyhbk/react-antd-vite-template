@@ -2,7 +2,8 @@ import React from 'react';
 import { Comment, Avatar, Form, Button, List, Input } from 'antd';
 import Calendar from './calendar';
 const { TextArea } = Input;
-
+const oneDay = 1000 * 24 * 60 * 60;
+const now = new Date().getTime();
 const CommentList = ({ comments }) => (
   <List
     dataSource={comments}
@@ -74,7 +75,37 @@ export default class App extends React.Component {
 
     return (
       <div>
-        <Calendar />
+        <Calendar
+          schedules={[
+            {
+              id: 2838022616830084,
+              body: 6047416662671072,
+              title: '北才矿管声两达',
+              start: now - oneDay,
+              end: now,
+              borderColor: '#c179f2',
+              bgColor: '#79f29d',
+            },
+            {
+              id: 7827355052328094,
+              body: 5269830756979098,
+              title: '格路大',
+              start: now - 2 * oneDay,
+              end: now - oneDay,
+              borderColor: '#f27a79',
+              bgColor: '#799af2',
+            },
+            {
+              id: 220898074271064,
+              body: 2218439154139238,
+              title: '林例例里红叫',
+              start: now - 3 * oneDay,
+              end: now - 2 * oneDay,
+              borderColor: '#bef279',
+              bgColor: '#f279e1',
+            },
+          ]}
+        />
         {comments.length > 0 && <CommentList comments={comments} />}
         <Comment
           avatar={

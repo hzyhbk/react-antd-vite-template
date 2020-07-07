@@ -12,7 +12,9 @@
     "@pika/react": "^16.13.1",
     "@pika/react-dom": "^16.13.1",
     "antd": "^4.3.5",
-    "react-router-dom": "^5.2.0"
+    "moment": "^2.27.0",
+    "react-router-dom": "^5.2.0",
+    "tui-calendar": "^1.12.13"
   },
   "devDependencies": {
     "hasky": "^3.0.2",
