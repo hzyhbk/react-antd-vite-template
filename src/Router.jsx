@@ -11,10 +11,12 @@ import {
   HomeOutlined,
   GithubOutlined,
   CalendarOutlined,
+  TableOutlined,
 } from '@ant-design/icons';
 import Home from './pages/index';
 import Main from './pages/main';
 import About from './pages/about';
+import Table from './pages/table';
 
 export function MenuRouterView() {
   const location = useLocation();
@@ -25,6 +27,9 @@ export function MenuRouterView() {
       </Menu.Item>
       <Menu.Item key="/about" icon={<CalendarOutlined />}>
         <Link to="/about">日历</Link>
+      </Menu.Item>
+      <Menu.Item key="/table" icon={<TableOutlined />}>
+        <Link to="/table">表格</Link>
       </Menu.Item>
       <Menu.Item key="/main" icon={<GithubOutlined />}>
         <Link to="/main">关于</Link>
@@ -40,6 +45,9 @@ export function ContentRouterView() {
       </Route>
       <Route path="/main">
         <Main />
+      </Route>
+      <Route path="/table">
+        <Table />
       </Route>
       <Route path="/">
         <Home />

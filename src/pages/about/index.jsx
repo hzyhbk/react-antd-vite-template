@@ -75,6 +75,7 @@ export default class App extends React.Component {
 
     return (
       <div>
+        <h1>基于 tui-calendar 实现的日程表</h1>
         <Calendar
           schedules={[
             {
